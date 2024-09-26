@@ -27,8 +27,8 @@ def daily_reminder():
     else:
         reminder += ". Consider completing it when you have free time."
 
-    # Output the reminder message
-    print(f"\nReminder: {reminder}")
+    # Corrected print statement that outputs the reminder
+    print(f"Reminder: {reminder}")
 
 # Run the reminder function
 if __name__ == "__main__":
