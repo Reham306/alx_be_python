@@ -1,6 +1,6 @@
 # arithmetic_operations.py
 
-def perform_operation(num1, num2, operation) -> float:
+def perform_operation(num1, num2, operation):
     if operation == 'add':
         return num1 + num2
     elif operation == 'subtract':
