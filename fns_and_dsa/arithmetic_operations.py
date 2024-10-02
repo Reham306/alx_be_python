@@ -14,5 +14,3 @@ def perform_operation(num1: float, num2: float, operation: str) -> float:
             return "Division by zero is not allowed"  # Handling division by zero
     else:
         return "Invalid operation"  # Handling invalid operations
-
-       
