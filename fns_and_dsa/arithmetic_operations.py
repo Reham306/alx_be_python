@@ -8,9 +8,9 @@ def perform_operation(num1, num2, operation):
     elif operation == 'multiply':
         return num1 * num2
     elif operation == 'divide':
-        if num2 != 0:
-            return num1 / num2
+        if num2 == 0:  # Check for division by zero here
+            return "Division by zero is not allowed"  # Handle division by zero
         else:
-            return "Division by zero is not allowed"  # Handling division by zero
+            return num1 / num2  # Perform the division if num2 is not zero
     else:
-        return "Invalid operation"  # Handling invalid operations
+        return "Invalid operation"  # Handle invalid operations
