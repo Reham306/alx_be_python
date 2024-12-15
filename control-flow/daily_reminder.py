@@ -1,35 +1,34 @@
 # daily_reminder.py
 
-def daily_reminder():
-    # Prompt the user for task description
-    task = input("Enter your task: ").strip()
+# Prompt for a single task
+task = input("Enter your task: ")
 
-    # Prompt the user for task priority (high/medium/low)
-    priority = input("Priority (high/medium/low): ").strip().lower()
+# Prompt for the task’s priority (high, medium, low)
+priority = input("Priority (high/medium/low): ").lower()
 
-    # Prompt if the task is time-sensitive (yes/no)
-    time_bound = input("Is it time-bound? (yes/no): ").strip().lower()
+# Ask if the task is time-bound (yes or no)
+time_bound = input("Is it time-bound? (yes/no): ").lower()
 
-    # Customized reminder message based on priority and time sensitivity
-    match priority:
-        case "high":
-            reminder = f"'{task}' is a high priority task"
-        case "medium":
-            reminder = f"'{task}' is a medium priority task"
-        case "low":
-            reminder = f"'{task}' is a low priority task"
-        case _:
-            reminder = f"'{task}' has an undefined priority level"
+# Provide a customized reminder based on the priority and time sensitivity
+reminder = ""
 
-    # Check if the task is time-bound
-    if time_bound == "yes":
-        reminder += " that requires immediate attention today!"
-    else:
-        reminder += ". Consider completing it when you have free time."
+# Use match case to handle different priorities
+match priority:
+    case 'high':
+        reminder = f"'{task}' is a high priority task"
+    case 'medium':
+        reminder = f"'{task}' is a medium priority task"
+    case 'low':
+        reminder = f"'{task}' is a low priority task"
+    case _:
+        reminder = f"'{task}' has an unspecified priority level"
 
-    # Corrected print statement that outputs the reminder
-    print(f"Reminder: {reminder}")
+# Use if statement to modify the reminder if the task is time-bound
+if time_bound == 'yes':
+    reminder += " that requires immediate attention today!"
+else:
+    reminder += ". Consider completing it when you have free time."
 
-# Run the reminder function
-if __name__ == "__main__":
-    daily_reminder()
+# Print the customized reminder
+print("Reminder:", reminder)
+

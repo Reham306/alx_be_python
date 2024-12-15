@@ -1,9 +1,11 @@
 # match_case_calculator.py
 
-# Prompt for user input
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
-operation = input("Choose the operation (+, -, *, /): ")
+# Prompt the user to input two numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+# Prompt the user to choose an operation
+operation = input("Choose the operation (+, -, *, /): ").strip()
 
 # Perform the calculation using match case
 match operation:
@@ -23,4 +25,5 @@ match operation:
         else:
             print("Cannot divide by zero.")
     case _:
-        print("Invalid operation. Please choose +, -, *, or /.")
+        print("Invalid operation selected.")
+

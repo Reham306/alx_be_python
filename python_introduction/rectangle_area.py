@@ -1,9 +1,11 @@
-# Defining the variables
-length = 10  # Length of the rectangle
-width = 5    # Width of the rectangle
+# rectangle_area.py
 
-# Calculating the area of the rectangle using the formula: Area = length * width
+# Define variables
+length = 10
+width = 5
+
+# Calculate the area of the rectangle
 area = length * width
 
-# Printing the result in the required format
+# Print the calculated area
 print(f"The area of the rectangle is: {area}")

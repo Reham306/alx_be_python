@@ -1,10 +1,12 @@
-# Defining the variables
-principal = 1000  # Principal amount
-rate = 0.05       # Annual interest rate (5%)
-time = 3          # Time in years
+# simple_interest.py
 
-# Calculating simple interest using the formula I = P * R * T
+# Define variables
+principal = 1000
+rate = 0.05
+time = 3
+
+# Calculate simple interest
 interest = principal * rate * time
 
-# Printing the result in the required format
+# Print the calculated interest
 print(f"The simple interest is: {interest}")
